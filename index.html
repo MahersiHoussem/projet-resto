@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">  
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Resto</title>
+<body>
+<header> 
+    <a href="#" class="logo"><span>T</span>omatoes</a>
+    <div class="menuToggle" onclick="toggleMenu();"></div>
+    <ul class="navbar">
+        <li><a href="#banniere" onclick="toggleMenu();">Accueil</a></li>
+        <li><a href="#apropos" onclick="toggleMenu();">A propos</a></li>
+        <li><a href="#menu" onclick="toggleMenu();">Menu</a></li>
+        <li><a href="#livraison" onclick="toggleMenu();">livraison</a></li>
+        <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        <a href="#Reservation" class="btn-reserve"onclick="toggleMenu();">Reservation</a>
+    </ul>
+</header>
+<section class="banniere" id="banniere">
+    <div class="contenu">
+        <h2>Bienvenue à <span>T</span>omatoes</h2>
+        <p>Restaurant Pizzaria Tomatoes</p>
+        <a href="#" class="btn1">Notre Menu</a>
+        <a href="#" class="btn2">Reservation</a>
+    </div>
+</section>
+<section class="apropos" id="apropos">
+    <div class="row">
+        <div class="col50">
+            <h2 class="titre-texte"><span>A</span> Propos De Nous</h2>
+            <p>Bienvenue à Tomatoes 
+                Restaurant Pizzaria Tomatoes
+                Route Manzel Chaker km 0.5 à coté Carrefour Express
+            </p>
+        </div>
+        <div class="col50">
+            <div class="img">
+                <img src="./images/proj3.jpg" alt="image">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="menu" id="menu">
+    <div class="titre">
+        <h2 class="titre-texte"><span>M</span>enu</h2>
+        <p>Restaurant Pizzaria Tomatoes</p>
+    </div>
+    <div class="contenu">
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/menu1.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>Spaghetti fruit de mer</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/menu2.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>Poulet grille</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/menu3.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>Makloub</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/menu5.jpeg" alt="">
+            </div>
+            <div class="text">
+                <h3>Malfouf</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/menu4.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>Pizza</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/menu6.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>Couscous</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/menu7.jpeg" alt="">
+            </div>
+            <div class="text">
+                <h3>Brik</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/menu8.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>Sandwich</h3>
+            </div>
+        </div>
+    </div>
+ </div>
+ <div class="titre">
+    <a href="#" class="btn1">Voir Plus</a>
+ </div>
+</section>
+<section class="livraison" id="livraison">
+    <div class="titre">
+        <h2 class="titre-texte"><span>L</span>ivraison</h2>
+        <p>Livraison autour de sfax
+        </p>
+        <div class="somme">
+            <p class="total">La Somme est: <span id="total">0</span> <span>dt</span></p>
+        </div>
+    </div>
+    <div class="part" id="part1">
+        <div class="icons">
+          <i class="fa fa-solid fa-heart" id="hearth1" onclick="heart1()"></i>
+        </div>
+        <span class="product-name"><strong>Salade grillée</strong><br> 7 dt</span>
+        <div class="btns">
+          <span class="btn" onclick="inc()">+</span>
+          <span class="btn" id="product-qtn">0</span>
+          <span class="btn"  onclick="dec()">-</span>
+        </div>
+        <p class="product-price"><span id="product1price">0</span> <span>dt</span></p>
+    </div>
+        <div class="part" id="part2">
+            <div class="icons">
+              <i class="fa fa-solid fa-heart" id="hearth2" onclick="heart2()"></i>
+            </div>
+            <span class="product-name"><strong>Salade Tunisienne</strong><br> 5 dt</span>
+            <div class="btns">
+              <span class="btn" onclick="inc2()">+</span>
+              <span class="btn" id="product-qtn2">0</span>
+              <span class="btn"  onclick="dec2()">-</span>
+            </div>
+            <p class="product-price"><span id="product1price2">0</span> <span>dt</span></p>
+
+         </div>
+         <div class="part" id="part3">
+            <div class="icons">
+              <i class="fa fa-solid fa-heart" id="hearth1" onclick="heart3()"></i>
+            </div>
+            <span class="product-name"><strong>Spaghetti fruits de mer</strong><br> 18 dt</span>
+            <div class="btns">
+              <span class="btn" onclick="inc3()">+</span>
+              <span class="btn" id="product-qtn3">0</span>
+              <span class="btn"  onclick="dec3()">-</span>
+            </div>
+            <p class="product-price"><span id="product1price3">0</span> <span>dt</span></p>
+
+         </div>
+         <div class="part" id="part4">
+            <div class="icons">
+              <i class="fa fa-solid fa-heart" id="hearth4" onclick="heart4()"></i>
+            </div>
+            <span class="product-name"><strong>Ijaa fruits de mer</strong><br> 17 dt</span>
+            <div class="btns">
+              <span class="btn" onclick="inc4()">+</span>
+              <span class="btn" id="product-qtn4">0</span>
+              <span class="btn"  onclick="dec4()">-</span>
+            </div>
+            <p class="product-price"><span id="product1price4">0</span> <span>dt</span></p>
+
+         </div>
+         <div class="part" id="part5">
+            <div class="icons">
+              <i class="fa fa-solid fa-heart" id="hearth5" onclick="heart5()"></i>
+            </div>
+            <span class="product-name"><strong>Ijja Merguez</strong><br> 15 dt</span>
+            <div class="btns">
+              <span class="btn" onclick="inc5()">+</span>
+              <span class="btn" id="product-qtn5">0</span>
+              <span class="btn"  onclick="dec5()">-</span>
+            </div>
+            <p class="product-price"><span id="product1price5">0</span> <span>dt</span></p>
+
+         </div>
+         <div class="part" id="part6">
+            <div class="icons">
+              <i class="fa fa-solid fa-heart" id="hearth6" onclick="heart6()"></i>
+            </div>
+            <span class="product-name"><strong>Poulet grille</strong><br> 20 dt</span>
+            <div class="btns">
+              <span class="btn" onclick="inc6()">+</span>
+              <span class="btn" id="product-qtn6">0</span>
+              <span class="btn"  onclick="dec6()">-</span>
+            </div>
+            <p class="product-price"><span id="product1price6">0</span> <span>dt</span></p>
+
+         </div>
+        
+   
+</section>
+ <section class="Reservation" id="Reservation">
+    <section class = "banner">
+        <h2>RÉSERVEZ VOTRE TABLE MAINTENANT</h2>
+        <div class = "card-container">
+            <div class = "card-img">
+                <!-- image here -->
+            </div>
+
+            <div class = "card-content">
+                <h3>Reservation</h3>
+                <form>
+                    <div class = "form-row">
+                        <select name = "days">
+                            <option value = "day-select">Select Day</option>
+                            <option value = "sunday">Sunday</option>
+                            <option value = "monday">Monday</option>
+                            <option value = "tuesday">Tuesday</option>
+                            <option value = "wednesday">Wednesday</option>
+                            <option value = "thursday">Thursday</option>
+                            <option value = "friday">Friday</option>
+                            <option value = "saturday">Saturday</option>
+                        </select>
+
+                        <select name = "hours">
+                            <option value = "hour-select">Select Hour</option>
+                            <option value = "10">10: 00</option>
+                            <option value = "10">12: 00</option>
+                            <option value = "10">14: 00</option>
+                            <option value = "10">16: 00</option>
+                            <option value = "10">18: 00</option>
+                            <option value = "10">20: 00</option>
+                            <option value = "10">22: 00</option>
+                        </select>
+                    </div>
+
+                    <div class = "form-row">
+                        <input type = "text" placeholder="Full Name">
+                        <input type = "text" placeholder="Phone Number">
+                    </div>
+
+                    <div class = "form-row">
+                        <input type = "number" placeholder="How Many Persons?" min = "1">
+                        <input type = "submit" value = "BOOK TABLE">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+ <section class="contact" id="contact">
+    <div class="titre noir">
+        <h2 class="titre-text"><span>C</span>ontact</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+    </div>
+    <div class="contactform">
+        <h3>Envoyer un message</h3>
+        <div class="inputboite">
+            <input type="text" placeholder="Nom">
+        </div>
+        <div class="inputboite">
+           <input type="text" placeholder="email">
+        </div>
+        <div class="inputboite">
+           <textarea placeholder="message"></textarea>
+        </div>
+        <div class="inputboite">
+            <input type="submit" value="envoyer">
+        </div>
+    </div>
+</section>
+ </section>
+ <div class="copyright">
+     <p>  <a href="#">Mahersi Houssem</a> 2022 gomycode </p>
+ </div>
+ <script type="text/javascript">
+     window.addEventListener('scroll', function(){
+         const header =document.querySelector('header');
+         header.classList.toggle("sticky", window.scrollY > 0 );
+     });
+
+     function toggleMenu(){
+         const tmenuToggle = document.querySelector('.menuToggle');
+         const navbar = document.querySelector('.navbar');
+         navbar.classList.toggle('active');
+         menuToggle.classList.toggle('active');
+     }
+ </script>
+</body>
+<script src="./script.js"></script>
+
+</html>
